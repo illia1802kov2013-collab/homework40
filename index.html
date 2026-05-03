@@ -143,7 +143,7 @@ body {
   transform: translate(-50%, -100px) scale(0.9);
   width: 300px;
   padding: 20px;
-  background: black;
+  background: white;
   border-radius: 10px;
 
   transition: all 300ms ease;
@@ -184,25 +184,23 @@ body {
 </div>
 
 <h2> модалка</h2>
-<div class="portfolio-card">
-  <div class="overlay">
-    <h3>Проєкт</h3>
-    <p>Короткий опис</p>
-    <button class="btn" data-modal-open>Переглянути</button>
-  </div>
-</div>
+  
+    <button class="btn-open" data-modal-open>Відкрити</button>
 
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <span class="close" data-modal-close></span>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn-close" data-modal-close>✕</button>
 
-    <h3>Назва товару</h3>
-    <p>Ціна: 1000 грн</p>
-    <p>Опис товару...</p>
-    <button class="btn">Додати в кошик</button>
-  </div>
-</div>
+            <div class="position">
+                <h2>Заголовок</h2>
+                <p>Вміст модального вікна...</p>
+                <button class="qwe">buy</button>
+            </div>
+
+        </div>
+    </div>
+
 
 <script src="app.js"></script>
 
